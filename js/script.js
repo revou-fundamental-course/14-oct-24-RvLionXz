@@ -97,24 +97,3 @@ messageForm.addEventListener('submit', function(e) {
     outputGender.textContent = gender;
     outputMessage.textContent = message;
 });
-
-// // Massage form functionality
-// const massageForm = document.getElementById('massage-form');
-// const outputName = document.getElementById('output-name');
-// const outputBirthdate = document.getElementById('output-birthdate');
-// const outputGender = document.getElementById('output-gender');
-// const outputMessage = document.getElementById('output-message');
-
-// massageForm.addEventListener('submit', function(e) {
-//     e.preventDefault();
-
-//     const name = document.getElementById('name').value;
-//     const birthdate = document.getElementById('birthdate').value;
-//     const gender = document.querySelector('input[name="gender"]:checked').value;
-//     const message = document.getElementById('message').value;
-
-//     outputName.textContent = name;
-//     outputBirthdate.textContent = birthdate;
-//     outputGender.textContent = gender;
-//     outputMessage.textContent = message;
-// });
