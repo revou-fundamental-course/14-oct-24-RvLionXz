@@ -20,7 +20,7 @@ body {
     align-items: center;
     background-color: rgba(11, 12, 16, 0.8);
     padding: 1rem 2rem;
-    top: 100;
+    top: 0;
     z-index: 99999;
     backdrop-filter: blur(10px);
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .nav-links li {
-    margin-left: 1rem;
+    margin-left: 4rem;
 }
 
 .nav-links a {
