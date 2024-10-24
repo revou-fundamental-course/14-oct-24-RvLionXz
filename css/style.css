@@ -433,43 +433,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.footer {
-    background: rgba(0, 0, 0, 0.8); /* Warna latar belakang hitam transparan */
-    color: white;
-    padding: 20px 10%;
-    text-align: center;
-  }
-  
-  .footer-content {
-    margin-bottom: 20px;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Memungkinkan link untuk berpindah ke baris baru */
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s;
-  }
-  
-  .footer-links a:hover {
-    color: #ffcc00; /* Warna saat di-hover */
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid #fff;
-    padding-top: 10px;
-  }
-  
-  .footer-bottom p {
-    font-size: 14px;
-  }
-
 .prev {
     left: 10px;
 }
@@ -624,15 +587,4 @@ body {
         flex-direction: column;
     }
 
-    .footer {
-        padding: 20px 5%;
-      }
-      
-      .footer-links {
-        flex-direction: column; /* Mengubah layout menjadi kolom pada layar kecil */
-      }
-    
-      .footer-links a {
-        margin: 5px 0; /* Margin vertikal antara link */
-      }
 }
