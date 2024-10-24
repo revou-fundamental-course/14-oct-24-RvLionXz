@@ -78,6 +78,8 @@ projectCards.forEach(card => {
     });
 });
 
+//massage form
+
 const messageForm = document.getElementById('message-form');
 const outputName = document.getElementById('output-name');
 const outputBirthdate = document.getElementById('output-birthdate');
