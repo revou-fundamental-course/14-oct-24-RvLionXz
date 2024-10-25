@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="https://github.com/RvLionXz" class="logo-link">RvLionXz</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#message">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <div class="welcome-text">
+                    <h1 id="welcome-message">Hi Reval, Welcome to the website</h1>
+                    <p>This is the website that I built for the requirements in the learning process at RevoU</p>
+                </div>
+                <div class="photo-slider">
+                    <div class="slider-container">
+                        <img src="https://picsum.photos/id/1018/600/400" alt="Landscape" class="slider-image">
+                    </div>
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- AboutMe -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm a passionate web developer with a keen interest in creating interactive and user-friendly websites. My journey in the world of coding started with a simple "Hello, World!" and has since evolved into crafting complex web applications.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while solving coding challenges.</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="asset/Me.jpg" alt="Profile Picture" id="profile-picture">
+                    <div class="image-overlay">
+                        <p>That's me!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Last Project -->
+        <section id="projects" class="projects-section">
+            <h2>My Last Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="asset/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>To Do List</h3>
+                        <p>he To-Do List Project is a simple application that allows users to add, delete, and mark tasks. It consists of a header, a form for task input, and a task list displayed on the screen. Built using HTML, CSS, and JavaScript for basic task management functionality.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://rvlionxz.github.io/To-Do-List/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="asset/project2.webp" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Minecraft Afk Bot</h3>
+                        <p>The AFK Bot project is a script designed to automate specific in-game actions while the player is away. It simulates player activity, such as sending chat messages or performing repetitive tasks, ensuring the player stays active in the game. Built to run in the background, the bot interacts with the game by mimicking key presses and commands, enhancing efficiency in tasks like farming or leveling.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/RvLionXz/Minecraft-Afk-Bot" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--Contact-->
+        <section id="contact" class="message-section">
+            <h2>Leave a Message</h2>
+            <div class="message-container">
+                <form id="message-form" class="message-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                <div id="output" class="output-box">
+                    <h3>Message Preview</h3>
+                    <p><strong>Name:</strong> <span id="output-name"></span></p>
+                    <p><strong>Date of Birth:</strong> <span id="output-birthdate"></span></p>
+                    <p><strong>Gender:</strong> <span id="output-gender"></span></p>
+                    <p><strong>Message:</strong> <span id="output-message"></span></p>
+                </div>
+            </div>
+        </section>
+
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <h2>Welcome!</h2>
+            <p>Please enter your username:</p>
+            <input type="text" id="username-input" placeholder="Your username">
+            <button id="submit-username">Submit</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
